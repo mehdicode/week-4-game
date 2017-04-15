@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CrystalsCollector Game</title>
+	<title>Crystals Collector Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<!-- Latest compiled and minified CSS -->
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+  <!-- Fonts links -->
   <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 
@@ -16,51 +17,12 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-
-  <style type="text/css">
-
-  body{
-    background-color: #A2A3B1;
-  }
-    .row{
-      max-width: 100%;
-    }
-
-  h1{
-    font-family: 'Chewy', cursive;
-  }
-
-  #stat{
-    font-family: 'Bangers', cursive;
-  }
-
-  span{
-    color: red;
-  }
-
-  .panel-body{
-    background-color: #757ABE;
-  }
-
-  .badge{
-    color: black;
-    font-size: 17px;
-  }
-
- 
-    #demoCntr {
-      margin-bottom: 15px;
-    }
-  </style>
-
-
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
 
-    <h1 class="text-center">Crystal Collector Game!</h1>
+    <h1 class="text-center">Crystals Collector Game!</h1>
       <div class="container text-center">
         <div class="row">
           <div class="col-md-12">
@@ -68,8 +30,8 @@
               <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Game Instruction</button>
               <div id="demo" class="collapse">
                 You will be given a random number at the start of the game.<br>
-                There are four crystal below, By clickingon a crystal you will add a secific amount of points to your total score.<br>
-                You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br>
+                There are four crystals below, By clicking on a crystal you will add a specific amount of points to your total score.<br>
+                You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.<br>
                 The value of each crystal is hidden from you until you click on it.<br>
                 Each time when the game starts, the game will change the values of each crystal.
 
@@ -85,12 +47,12 @@
               </div>
 
             <div class="panel-body">
-              <div class="text-left">
-                <h2 id="stat">Random Number: <span id="rno"></span></h2>
-                <h3 id="stat">Your Score: <span class="badge" id="yscore"></span></h3>
-                <h4 id="stat">Wins: <span  class="badge" id="wns">0</span></h4>
-                <h4 id="stat">Losses: <span class="badge" id="los">0</span></h4>
-              </div>
+                <div class="text-left">
+                  <h2 id="stat">Random Number: <span id="rno"></span></h2>
+                  <h3 id="stat">Your Score: <span class="badge" id="yscore"></span></h3>
+                  <h4 id="stat">Wins: <span  class="badge" id="wns">0</span></h4>
+                  <h4 id="stat">Losses: <span class="badge" id="los">0</span></h4>
+                </div>
             </div>
 
 
@@ -111,15 +73,7 @@
    
     </div>
 
-   
 
-
-
-
-
-
-
-
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

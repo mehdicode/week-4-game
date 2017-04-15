@@ -1,0 +1,32 @@
+  body{
+    background-color: #A2A3B1;
+    };
+    .row{
+      max-width: 100%;
+    };
+
+  h1{
+    font-family: 'Chewy', cursive;
+    }
+
+  #stat{
+    font-family: 'Bangers', cursive;
+    }
+
+  span{
+    color: red;
+    }
+
+  .panel-body{
+    background-color: #757ABE;
+    }
+
+  .badge{
+    color: black;
+    font-size: 17px;
+    }
+
+ 
+  #demoCntr {
+      margin-bottom: 15px;
+    }
